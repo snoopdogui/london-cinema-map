@@ -6,15 +6,30 @@ from the [MovieGlu](https://developer.movieglu.com) API.
 
 Built with Next.js (App Router), React Leaflet, and Tailwind CSS. Installable as a PWA.
 
+![The London Cinema Map — map view with filter sidebar](docs/screenshot-map.jpg)
+
 ## Features
 
-- **Map view** of every cinema in the dataset, colour-coded by chain
+- **Map view** of every cinema in the dataset, with pins colour-coded by price band —
+  🟢 `£` · 🟠 `££` · 🔴 `£££`
 - **Live showtimes** for the selected date, fetched per cinema and cached
-- **Filter by chain and neighbourhood** from the sidebar
+- **Date picker** covering today plus the next six days
+- **Search** across cinema, film, and neighbourhood names
+- **"Near Me"** geolocation to centre the map on you
+- **Filters** for price, time of day, genre, chain/venue, accessibility (wheelchair access,
+  CC subtitled, sensory friendly), discounts (student, senior, NHS), and film language
 - **Deep links to booking pages** for each venue
+- **Light and dark themes**
 - **Responsive** — a bottom sheet on mobile, a sidebar on desktop
 - **Offline-capable** via a service worker precaching the shell
 - **Feedback form** that emails submissions over SMTP
+
+Selecting a cinema opens its details — address, chain, rating, accessibility and discount
+badges, and the day's screenings with times, prices, and genre, each linking out to booking:
+
+<p align="center">
+  <img src="docs/screenshot-cinema.jpg" alt="Cinema detail popup showing screenings, times and prices" width="440">
+</p>
 
 ## Getting started
 
