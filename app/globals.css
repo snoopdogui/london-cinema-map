@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Leaflet overrides for dark mode */
+.leaflet-container {
+  background: #1a1a2e !important;
+}
+
+.leaflet-popup-content-wrapper {
+  background: #1e2435 !important;
+  color: #e2e8f0 !important;
+  border: 1px solid #334155 !important;
+  border-radius: 12px !important;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7) !important;
+  padding: 0 !important;
+}
+
+.leaflet-popup-content {
+  margin: 0 !important;
+  width: 320px !important;
+}
+
+.leaflet-popup-tip {
+  background: #1e2435 !important;
+}
+
+.leaflet-popup-close-button {
+  color: #94a3b8 !important;
+  font-size: 18px !important;
+  padding: 0 !important;
+  width: 24px !important;
+  height: 24px !important;
+  line-height: 24px !important;
+  text-align: center !important;
+  right: 10px !important;
+  top: 10px !important;
+  z-index: 10;
+}
+
+.leaflet-popup-close-button:hover {
+  color: #e2e8f0 !important;
+}
+
+/* Light mode Leaflet overrides */
+html.light .leaflet-container {
+  background: #e8e8e8 !important;
+}
+
+html.light .leaflet-popup-content-wrapper {
+  background: #ffffff !important;
+  color: #1e293b !important;
+  border: 1px solid #e2e8f0 !important;
+  box-shadow: 0 10px 40px -8px rgba(0, 0, 0, 0.15) !important;
+}
+
+html.light .leaflet-popup-tip {
+  background: #ffffff !important;
+}
+
+html.light .leaflet-popup-close-button {
+  color: #64748b !important;
+}
+
+html.light .leaflet-popup-close-button:hover {
+  color: #1e293b !important;
+}
+
+html.light ::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+html.light ::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+}
+
+html.light ::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Custom marker styles */
+.cinema-marker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e2435;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* Modal scrollbar — thin, rounded, transparent track so it sits inside the rounded corners */
+.modal-scroll::-webkit-scrollbar {
+  width: 4px;
+}
+
+.modal-scroll::-webkit-scrollbar-track {
+  background: transparent;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.modal-scroll::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 9999px;
+}
+
+.modal-scroll::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+html.light .modal-scroll::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+}
+
+html.light .modal-scroll::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Mobile bottom sheet transition */
+.sheet-transition {
+  transition: height 300ms ease-out;
+}
+
+/* Hide scrollbar for filter pill row */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

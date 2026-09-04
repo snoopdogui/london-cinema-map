@@ -1,0 +1,24 @@
+{
+  "name": "london-cinema-map",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "leaflet": "^1.9.4",
+    "lucide-react": "^1.7.0",
+    "next": "^16.2.1",
+    "nodemailer": "^8.0.4",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-leaflet": "^4.2.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1"
+  }
+}
