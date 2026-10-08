@@ -148,8 +148,8 @@ export default function Map({ cinemas, selectedCinema, selectedDayName, userLoca
         key={darkMode ? "dark" : "light"}
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
         url={darkMode
-          ? "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
-          : "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"}
+          ? "https://basemaps.cartocdn.com/rastertiles/dark_all/{z}/{x}/{y}.png?key=" + process.env.NEXT_PUBLIC_CARTO_KEY
+          : "https://basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}.png?key=" + process.env.NEXT_PUBLIC_CARTO_KEY}
       />
 
       <FlyToSelected cinema={selectedCinema} markerRefs={markerRefs} />
